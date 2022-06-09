@@ -1,4 +1,4 @@
-# 노마드코더 - ReactJS로 영화 웹 서비스 만들기(#5 ~)
+# 노마드 코더 - ReactJS로 영화 웹 서비스 만들기(#5 ~)
 
 # Getting Started with Create React App
 
