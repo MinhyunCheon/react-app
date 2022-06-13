@@ -1,11 +1,13 @@
-import Button from "./Button";
-import styles from "./App.module.css";
+import { useState } from "react";
 
 function App() {
+  const [counter, setCounter] = useState(0);
+  const onClick = () => setCounter(p => p + 1);
+  console.log("call an api");
   return (
-    <div className="App">
-      <h1 className={styles.title}>Welcome back!!!</h1>
-      <Button text="Test" />
+    <div>
+      <h1>{counter}</h1>
+      <button onClick={onClick}>Click me</button>
     </div>
   );
 }
