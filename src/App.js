@@ -7,10 +7,10 @@ function App() {
   const onChange = (event) => setKeyword(event.target.value);
   console.log("i run all the time");
   const runOnlyOnce = () => console.log("i run only once");
-  useEffect(runOnlyOnce, []);
+  useEffect(runOnlyOnce, []); // dependency가 없는 경우, 최초 1회만 실행
   useEffect(() => { // keyword에 변화가 있을 때만 실행
     console.log("Search for", keyword);
-  }, [keyword, counter]); // 배열 형태이기 때문에 여러 값 설정 가능
+  }, [keyword, counter]); // 배열 형태이기 때문에 여러 값 설정 가능(둘 중 하나가 변경될 경우 실행)
   return (
     <div>
       <input
