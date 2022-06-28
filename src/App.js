@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const [toDo, setToDo] = useState("");
@@ -18,6 +18,11 @@ function App() {
         <input onChange={onChange} value={toDo} type="text" placeholder="Write your to do..." />
         <button>Add To Do</button>
       </form>
+      <h1 />
+      <ul>
+        {/* index를 지정하지 않는 경우 경고 발생 */}
+        {toDos.map((item, index) => <li key={index}>{item}</li>)}
+      </ul>
     </div>
   );
 }
