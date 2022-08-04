@@ -24,7 +24,8 @@ function Home() {
         <div>
           {movies.map(movie =>
             <Movie
-              key={movie.id}
+              key={movie.id}  // key는 파라미터로 넘길 수 없음
+              id={movie.id}
               medium_cover_image={movie.medium_cover_image}
               title={movie.title}
               summary={movie.summary}

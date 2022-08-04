@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Switch>
         {/** 첫번째 매칭되는 것을 반환하기 때문에 "/"가 최상단에 위치한 경우 "/movie"에 접근할 수 없음 */}
-        <Route path="/movie">
+        <Route path="/movie/:id">
           <Detail />
         </Route>
         <Route path="/">
