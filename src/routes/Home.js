@@ -29,6 +29,7 @@ function Home() {
               id={movie.id}
               medium_cover_image={movie.medium_cover_image}
               title={movie.title}
+              year={movie.year}
               summary={movie.summary}
               genres={movie.genres}
             />
